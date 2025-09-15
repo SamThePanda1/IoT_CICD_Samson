@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { ledIsOn } from "../togglels";
+import { ledIsOn } from "../src/togglels";
 
 describe("isLedOn", () => {
   it("returns true if light is on", () => {
@@ -8,5 +8,4 @@ describe("isLedOn", () => {
   it("returns false if light is off", () => {
     expect(ledIsOn(0)).toBe(false);
   });
-
 });
